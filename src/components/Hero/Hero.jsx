@@ -3,7 +3,7 @@ import React from 'react'
 import './Hero.css'
 import Emailbox from '../Emailbox/Emailbox'
 import { HeroData } from '@/src/utils/data'
-import { animate, motion } from 'framer-motion'
+import { motion } from 'framer-motion'
 const Hero = () => {
 
    const variants = (delay) => ({
@@ -38,6 +38,8 @@ const Hero = () => {
   return(
     <div className='h-wrapper'>
         <div className='container'>
+
+            <img src='hero/hero-arrow.png' alt='arrow' className='h-arrow'></img>
             <div className='h-container'>
                 <div className='h-left'>
                     <div className='image-row'>
