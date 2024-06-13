@@ -111,7 +111,11 @@ const WhatWeDo = () => {
                     </div>
 
 
-                    <div className="wwd-support">
+                    <motion.div 
+                        initial="offscreen"
+                        whileInView={"onscreen"}
+                        variants={containerVariants(0.3)}
+                        className="wwd-support">
                         <div>
                             <span className='sec-title'>Blue Growth Support</span>
                             <span className='des'>
@@ -127,7 +131,7 @@ const WhatWeDo = () => {
                             </span>
                         </div>
 
-                    </div>
+                    </motion.div>
                 </div>
             </div>
         </div>
