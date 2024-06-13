@@ -1,7 +1,11 @@
+"use client"
+
 import React from 'react'
 import './WhatWeDo.css'
 import { features } from '@/src/utils/data'
 import Image from 'next/image'
+import {motion} from 'framer-motion'
+import { containerVariants, desVariants, tagVaraints, titleVaraints } from '@/src/utils/animation'
 
 const WhatWeDo = () => {
     return (
@@ -9,26 +13,52 @@ const WhatWeDo = () => {
             <div className="container">
                 <div className="wwd-container">
                     <div className="wwd-head">
-                        <span className='tag'>What we do</span>
-                        <span className='title'>
-                            {" "}
-                            Empowering Founders With Non Dilutive Capital And Execution Expertise
-                        </span>
-                        <span className='des'>Here is how we can evaluate</span>
+                        <motion.span 
+                            className='tag'
+                            initial="offscreen"
+                            whileInView={"onscreen"}
+                            variants={tagVaraints}
+                        >What we do</motion.span>
+                        <motion.span 
+                            className='title'
+                            initial="offscreen"
+                            whileInView={"onscreen"}
+                            variants={titleVaraints}>
+                                {" "}
+                                Empowering Founders With Non Dilutive Capital And Execution Expertise
+                        </motion.span>
+                        <motion.span 
+                            className='des'
+                            initial="offscreen"
+                            whileInView={"onscreen"}
+                            variants={desVariants}
+                            >Here is how we can evaluate</motion.span>
                     </div>
 
 
                     <div className="wwd-blocks">
                         <div className="wwd-block">
-                            <span className='sec-title'>Blue Advances</span>
-                            <span className='text'>
+                            <motion.span 
+                                initial="offscreen"
+                                whileInView={"onscreen"}
+                                variants={titleVaraints}
+                                className='sec-title'>Blue Advances</motion.span>
+                            <motion.span
+                                initial="offscreen"
+                                whileInView={"onscreen"}
+                                variants={desVariants}
+                                className='text'>
                                 Fund recurring growth expenses e.g. customer acquisition, inventory
-                            </span>
+                            </motion.span>
 
                             <div className="block-features">
                                 {
                                     features.slice(0, 3).map((feature, i) => (
-                                        <div className='block-feature' key={i}>
+                                        <motion.div
+                                        initial="offscreen"
+                                        whileInView={"onscreen"}
+                                        variants={containerVariants((i+1)*0.1)}
+                                        className='block-feature' key={i}>
                                             <Image
                                                 src={feature.icon}
                                                 alt='feature'
@@ -37,22 +67,34 @@ const WhatWeDo = () => {
                                             >
                                             </Image>
                                             <span>{feature.title}</span>
-                                        </div>
+                                        </motion.div>
                                     ))
                                 }
                             </div>
                         </div>
 
                         <div className='wwd-block'>
-                            <span className='sec-title'>Blue Seed</span>
-                            <span className='text'>
+                            <motion.span 
+                                className='sec-title'
+                                initial="offscreen"
+                                whileInView={"onscreen"}
+                                variants={titleVaraints}>Blue Seed</motion.span>
+                            <motion.span 
+                            className='text'
+                            initial="offscreen"
+                            whileInView={"onscreen"}
+                            variants={desVariants}>
                                 Fund one-offs to scale e.g. product, hiring
-                            </span>
+                            </motion.span>
 
                             <div className="block-features">
                                 {
                                     features.slice(3, 6).map((feature, i) => (
-                                        <div className='block-feature' key={i}>
+                                        <motion.div
+                                        initial="offscreen"
+                                        whileInView={"onscreen"}
+                                        variants={containerVariants((i+1)*0.1)}
+                                        className='block-feature' key={i}>
                                             <Image
                                                 src={feature.icon}
                                                 alt='feature'
@@ -61,7 +103,7 @@ const WhatWeDo = () => {
                                             >
                                             </Image>
                                             <span>{feature.title}</span>
-                                        </div>
+                                        </motion.div>
                                     ))
                                 }
                             </div>
