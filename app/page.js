@@ -7,6 +7,7 @@ import BrandingVideo from '@/src/components/BrandingVideo/BrandingVideo';
 import WhatWeDo from '@/src/components/WhatWeDo/WhatWeDo';
 import OurDiff from '@/src/components/OurDiff/OurDiff';
 import {motion, useAnimation} from 'framer-motion'
+import HotItWork from '@/src/components/howItWorks/HotItWork';
 export default function Home() {
   const controls = useAnimation()
   return (
@@ -31,6 +32,7 @@ export default function Home() {
       >
         <OurDiff></OurDiff>
       </motion.div>
+      <HotItWork></HotItWork>
      
     </motion.div>
   );
