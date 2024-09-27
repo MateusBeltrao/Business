@@ -58,7 +58,7 @@ const HotItWork = () => {
                                         transition: {
                                             type: 'easeIn',
                                             duration: 1,
-                                            delay: 7
+                                            delay: .5
                                         }
                                     }}
                                 >
