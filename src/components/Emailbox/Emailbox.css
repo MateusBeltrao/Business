@@ -35,3 +35,7 @@
     border-radius: 999px;
     color: white;
 }
+
+.getFunded:hover{
+    cursor: pointer;
+}

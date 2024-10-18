@@ -8,6 +8,7 @@ import WhatWeDo from '@/src/components/WhatWeDo/WhatWeDo';
 import OurDiff from '@/src/components/OurDiff/OurDiff';
 import {motion, useAnimation} from 'framer-motion'
 import HotItWork from '@/src/components/howItWorks/HotItWork';
+import Footer from '@/src/components/Footer/Footer';
 export default function Home() {
   const controls = useAnimation()
   return (
@@ -33,6 +34,7 @@ export default function Home() {
         <OurDiff></OurDiff>
       </motion.div>
       <HotItWork></HotItWork>
+      <Footer></Footer>
      
     </motion.div>
   );

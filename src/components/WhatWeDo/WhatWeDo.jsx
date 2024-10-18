@@ -18,39 +18,38 @@ const WhatWeDo = () => {
                             initial="offscreen"
                             whileInView={"onscreen"}
                             variants={tagVaraints}
-                        >What we do</motion.span>
+                        >O Que Fazemos</motion.span>
                         <motion.span 
                             className='title'
                             initial="offscreen"
                             whileInView={"onscreen"}
                             variants={titleVaraints}>
                                 {" "}
-                                Empowering Founders With Non Dilutive Capital And Execution Expertise
+                                Capacitando Empreendedores Com Capital Não Dilutivo E Expertise Em Execução
                         </motion.span>
                         <motion.span 
                             className='des'
                             initial="offscreen"
                             whileInView={"onscreen"}
                             variants={desVariants}
-                            >Here is how we can evaluate</motion.span>
+                            >Veja como podemos avaliar</motion.span>
                     </div>
-
-
+    
                     <div className="wwd-blocks">
                         <div className="wwd-block">
                             <motion.span 
                                 initial="offscreen"
                                 whileInView={"onscreen"}
                                 variants={titleVaraints}
-                                className='sec-title'>Blue Advances</motion.span>
+                                className='sec-title'>Avanços Financeiros</motion.span>
                             <motion.span
                                 initial="offscreen"
                                 whileInView={"onscreen"}
                                 variants={desVariants}
                                 className='text'>
-                                Fund recurring growth expenses e.g. customer acquisition, inventory
+                                Financiar despesas de crescimento recorrente, como aquisição de clientes e estoque.
                             </motion.span>
-
+    
                             <div className="block-features">
                                 {
                                     features.slice(0, 3).map((feature, i) => (
@@ -72,7 +71,7 @@ const WhatWeDo = () => {
                                 }
                             </div>
                         </div>
-
+    
                         <div className='wwd-block'>
                             <motion.span 
                                 className='sec-title'
@@ -84,9 +83,9 @@ const WhatWeDo = () => {
                             initial="offscreen"
                             whileInView={"onscreen"}
                             variants={desVariants}>
-                                Fund one-offs to scale e.g. product, hiring
+                                Financiar iniciativas únicas para escalar, como produtos e contratações.
                             </motion.span>
-
+    
                             <div className="block-features">
                                 {
                                     features.slice(3, 6).map((feature, i) => (
@@ -109,33 +108,32 @@ const WhatWeDo = () => {
                             </div>
                         </div>
                     </div>
-
-
+    
                     <motion.div 
                         initial="offscreen"
                         whileInView={"onscreen"}
                         variants={containerVariants(0.3)}
                         className="wwd-support">
                         <div>
-                            <span className='sec-title'>Blue Growth Support</span>
+                            <span className='sec-title'>Suporte ao Crescimento</span>
                             <span className='des'>
-                                Data Insights and full stack expertise to supercharge growth
+                                Insights de Dados e expertise completa para impulsionar o crescimento.
                             </span>
                         </div>
                         <div>
                             <span className='text'>
-                                Actionable data insights by connecting revenue, marketing and social media platforms
+                                Insights de dados acionáveis conectando receita, marketing e plataformas de mídias sociais.
                             </span>
                             <span className='text'>
-                                On demand execution expertise at cost or revenue share across proposition design, engineering, marketing analytics, partnerships, brand, intellectual property, market expansion, talent management
+                                Expertise em execução sob demanda, a custo ou compartilhamento de receita em design de propostas, engenharia, análise de marketing, parcerias, marca, propriedade intelectual, expansão de mercado e gestão de talentos.
                             </span>
                         </div>
-
                     </motion.div>
                 </div>
             </div>
         </div>
     )
+    
 }
 
 export default WhatWeDo
